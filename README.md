@@ -50,7 +50,7 @@ Contributions are welcome! If you would like to improve this project, feel free 
 
 ## About the Author
 
-This repository and the accompanying article were created by **Jakub**. Jakub is a DevOps engineer and a machine learning enthusiast with experience in building CI/CD pipelines and working with cloud infrastructure. He is a member of the **GHOST** (Group Of Horribly Optimistic STatisticians) team, and is passionate about leveraging cutting-edge technologies to optimize machine learning workflows.
+This repository and the accompanying article were created by rojberr. Rojberr is a DevOps engineer and a machine learning enthusiast with experience in building CI/CD pipelines and working with cloud infrastructure. He is a member of the GHOST (Group Of Horribly Optimistic STatisticians) team, and is passionate about leveraging cutting-edge technologies to optimize machine learning workflows.
 
 ---
 
