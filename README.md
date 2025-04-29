@@ -1,7 +1,7 @@
 # free-Lightning.ai-runners
 CI/CD GPU Runners for ML Projects
 
-<img src="./pictures/image.png" alt="Image by Richy Great on Unsplash https://unsplash.com/de/fotos/weisses-und-silbernes-elektronisches-gerat-MAYEkmn7G6E" style="width: 100%; height: 200px; object-fit: cover;" />
+<img src="./pictures/image.png" alt="Image by Richy Great on Unsplash https://unsplash.com/de/fotos/weisses-und-silbernes-elektronisches-gerat-MAYEkmn7G6E" style="width: 100%; height: 400px; object-fit: cover;" />
 
 ## How to Run This Repo
 
