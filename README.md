@@ -1,6 +1,8 @@
 # free-Lightning.ai-runners
 CI/CD GPU Runners for ML Projects
 
+<img src="pictures/image.png" alt="Image by Richy Great on Unsplash https://unsplash.com/de/fotos/weisses-und-silbernes-elektronisches-gerat-MAYEkmn7G6E" width="400" />
+
 ## How to Run This Repo
 
 1. **Sign Up for Lightning.ai**  
