@@ -28,5 +28,5 @@ if __name__ == "__main__":
     pl_module = ToyExample(model)
     # Configure the dataset and return a data loader.
     train_dataloader = torch.utils.data.DataLoader(torch.randn(8, 32))
-    trainer = L.Trainer()
+    trainer = L.Trainer(max_epochs=1)
     trainer.fit(pl_module, train_dataloader)
