@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+*.log
+
+# Lightning AI / PyTorch Lightning specific
+*.ckpt
+lightning_logs/
+*.pth
+*.onnx
+*.mlmodel
+*.pt
+*.tflite
+
+# VS Code
+.vscode/
+
+# JetBrains IDEs (PyCharm, IntelliJ IDEA, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# DVC (if used)
+*.dvc
+.dvc/
+.dvcignore
+
+# Environment files
+.env
+.env.*
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# macOS and Windows
+.DS_Store
+Thumbs.db
+
+# Pytest
+.pytest_cache/
+.cache/
+
+# mypy
+.mypy_cache/
+
+# coverage
+.coverage
+htmlcov/
+.coverage.*
+
+# Pyre type checker
+.pyre/
+
+# Others
+*.swp
+*.bak
+*.tmp
