@@ -17,7 +17,7 @@ CI/CD GPU Runners for ML Projects
 ## Article Location
 
 You can read the full article explaining this process on Medium:  
-[Use Free Lightning.ai CI/CD GPU Runners for Your ML Project – MLOps Series 1/3](https://medium.com/p/e69617d6b954)
+[Use Free Lightning.ai CI/CD GPU Runners for Your ML Project – MLOps Series 1/3](https://medium.com/@jakub.drzymala.blog/use-free-lightning-ai-ci-cd-gpu-runners-for-your-ml-project-mlops-chronicles-1-3-e69617d6b954)
 
 ---
 
@@ -57,3 +57,6 @@ This repository and the accompanying article were created by rojberr. Rojberr is
 ### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### TODO
+- [ ] Add WandB features
