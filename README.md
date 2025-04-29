@@ -12,6 +12,8 @@ CI/CD GPU Runners for ML Projects
 3. **Trigger the Workflow**  
    The workflow is set up to run on **workflow_dispatch**, which means you can trigger it manually from the GitHub UI.
 
+**This Repository Workflow "Train Model using free GPU runner" doesn't work currently cause I removed the API keys from env!**
+
 ---
 
 ## Article Location
