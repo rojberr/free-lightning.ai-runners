@@ -34,7 +34,8 @@ jobs:
                     try:
                         studio.run(f"git clone --single-branch --branch {branch} https://github.com/rojberr/free-lightning.ai-runners.git")
                         studio.run("pip install -r ./free-lightning.ai-runners/requirements.txt")
-                        studio.run("cd free-lightning.ai-runners && python ./src/train.py")
+                        result = studio.run("cd free-lightning.ai-runners && python ./src/train.py")
+                        print(result)
                     finally:
                         studio.stop()
                         studio.delete()'
