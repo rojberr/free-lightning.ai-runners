@@ -1,0 +1,44 @@
+name: Train Model using free GPU runner
+
+on:
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-22.04
+
+        steps:
+
+            -   uses: actions/setup-python@v5
+                with:
+                    python-version: '3.11.11'
+
+            -   name: Install dependencies
+                run: |
+                    pip install lightning-sdk
+                shell: bash
+
+            -   name: Start free lightning.ai studio and train model there
+                run: |
+                    python -c 'import os, re
+                    from lightning_sdk import Studio, Machine
+
+                    user = os.environ.get("LIGHTNING_AI_USERNAME")
+                    branch = os.environ.get("GITHUB_REF_NAME", "main")
+                    branch_studio_name = re.sub("[^a-zA-Z0-9-]", "-", branch)[:30]
+
+                    studio = Studio(name=branch_studio_name, teamspace="Vision-model", user=user)
+                    studio.start(Machine.T4)
+
+                    try:
+                        studio.run(f"git clone --single-branch --branch {branch} https://github.com/rojberr/free-lightning.ai-runners.git")
+                        studio.run("pip install -r ./free-lightning.ai-runners/requirements.txt")
+                        studio.run("cd free-lightning.ai-runners && python ./src/train.py")
+                    finally:
+                        studio.stop()
+                        studio.delete()'
+
+                env:
+                    LIGHTNING_AI_USERNAME: ${{ secrets.LIGHTNING_AI_USERNAME }}
+                    LIGHTNING_USER_ID: ${{ secrets.LIGHTNING_USER_ID }}
+                    LIGHTNING_API_KEY: ${{ secrets.LIGHTNING_API_KEY }}
